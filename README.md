@@ -1,0 +1,29 @@
+# monotonic-set-map
+
+Experiments with writing `mapMonotonicallyIncreasing` for non-strictly monotonically increasing maps.
+
+```haskell
+mapMonotonicallyIncreasing :: Eq b => (a -> b) -> Set a -> Set b
+mapMonotonicallyIncreasing = fmap joins . S.mapMonotonic
+```
+
+
+## Benchmarks
+
+The main executable contains the `criterion` benchmarks, build and run with:
+
+```bash
+stack build
+stack exec -- monotonic-set-map-exe
+```
+
+
+## Tests
+
+The tests may be run with:
+
+```bash
+stack test
+```
+
+
