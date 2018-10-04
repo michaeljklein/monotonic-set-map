@@ -324,7 +324,7 @@ mapMonotonicHoldsSubset mapMonoInc' xs =
         (\y ->
            if y `S.member` xs
              then y
-             else max x y)
+             else x)
 
 -- | Infinite streams
 newtype Stream a = Stream { runStream :: Cofree Identity a } deriving (Functor)
