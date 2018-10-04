@@ -27,3 +27,7 @@ stack test
 ```
 
 
+# Docs
+
+Haddock generated documentation may be found [here](https://michaeljklein.github.io/monotonic-set-map/)
+
