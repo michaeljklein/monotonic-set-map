@@ -4,7 +4,6 @@ Experiments with writing `mapMonotonicallyIncreasing` for non-strictly monotonic
 
 ```haskell
 mapMonotonicallyIncreasing :: Eq b => (a -> b) -> Set a -> Set b
-mapMonotonicallyIncreasing = fmap joins . S.mapMonotonic
 ```
 
 
